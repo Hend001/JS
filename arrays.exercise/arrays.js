@@ -18,7 +18,7 @@ console.log(names.lenght);
 // Task 4
 // Print the last item of the array
 
-console.log(names[4]);
+console.log(names[names.lenght-1]);
 
 // Task 5
 // Add Peter as the last item to the array and print the whole array
@@ -53,7 +53,15 @@ numbers.sort((a, b) => 0.5 - Math.random());
 // Find the largest and smallest value from the numbers array using sort() function.
 // Print those values.
 
-function maxArray(arr) {
+const numbers = [1, 7, 45, 32, 27, 86];
+numbers.sort((a,b) => a-b);
+console.log(numbers[0],numbers[numbers.length-1]);
+
+
+
+
+
+/*function maxArray(arr) {
   return Math.max.apply(null, arr);
 }
 
@@ -63,4 +71,4 @@ function minArray(min) {
   return Math.min.apply(null, min);
 }
 
-document.querySelector("#task11").textContent = minArray(numbers);
+document.querySelector("#task11").textContent = minArray(numbers);*/
